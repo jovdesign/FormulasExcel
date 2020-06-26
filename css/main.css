@@ -1,0 +1,148 @@
+/*Utilidades*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    background: linear-gradient(90deg, #175923 0%, #fff 100%);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*Principal*/
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin:10px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+
+/*Combinados*/
+.contenedor div,
+.contenedor .header, 
+.contenedor .footer,
+.contenedor .widget-0{
+    
+    color:  #ffffff;
+    padding: 19px;
+    border-radius: 80px;
+    text-align: center;
+}
+
+
+
+
+.contenedor .header,
+.contenedor .widget-0,
+.contenedor .footer {
+    color: #ffffff;
+    grid-column: 1 / -1;
+}
+
+/*Header*/
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img{
+    max-width: 10%;
+}
+
+
+/*.widget-0*/
+.contenedor .widget-0{
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-weight: lighter;
+    font-size: 3rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*.widget-1*/
+.contenedor .widget-1{
+    line-height: 2rem;
+}
+
+.contenedor .widget-1 img{
+    width: 75%;    
+}
+
+.contenedor .widget-1 button{
+    width: 10rem;
+    height: 3rem;
+    background: transparent;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+
+/*.widget-2*/
+
+.contenedor .widget-2 img{
+    border-radius: 10px;
+}
+
+.contenedor .widget-2
+{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/*Responsive*/
+
+@media(max-width:1250px) and (min-width:768px){
+    
+    .contenedor{
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor .widget-0{
+        border-radius: 0px;
+    }
+
+    .header img{
+        max-width: 12%;
+    }
+}
+
+
+
+/*Celulares*/
+@media(max-width:767px){
+    .contenedor{
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor .widget-0{
+        border-radius: 0px;
+        font-size: 2rem;
+    }
+
+    .header img{
+        max-width: 20%;
+    }
+}
+
